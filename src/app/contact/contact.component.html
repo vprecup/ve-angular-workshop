@@ -1,0 +1,21 @@
+<div>
+  <br />
+  <div>
+  <label>Name:</label>
+  <input name="name" [(ngModel)]="name" />
+  </div>
+<div>
+  <label>Email:</label>
+  <input name="email" [(ngModel)]="cemail" required #email="ngModel" />
+  <label [hidden]="email.valid || email.pristine" style="color: red">Invalid email.</label>
+</div>
+<div>
+  <label>Interval:</label>
+  <select [(ngModel)]="period">
+    <option *ngFor="let period of periods; let i = index" [ngValue]="i">{{period}}</option>
+  </select> 
+  </div>
+<div>
+  <input type="submit" value="Submit" />
+</div>
+</div>
