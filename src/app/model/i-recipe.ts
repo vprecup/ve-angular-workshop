@@ -1,4 +1,4 @@
-interface IRecipe {
+export interface IRecipe {
   recipeId: number;
   name: string;
   price: number;
@@ -8,19 +8,19 @@ interface IRecipe {
   recipeInstructions: IRecipeInstruction[];
 }
 
-interface IRecipeInstruction {
+export interface IRecipeInstruction {
   recipeInstructionId: number;
   instructionText: string;
 }
 
-interface IRecipeIngredient {
+export interface IRecipeIngredient {
   recipeIngredientId?: number;
   ingredient?: Ingredient;
   amount?: number;
   amountType?: string;
 }
 
-interface Ingredient {
+export interface Ingredient {
   ingredientId: number;
   name: string;
   Type: string;

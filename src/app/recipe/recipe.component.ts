@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { AfterContentInit,  ViewChild } from '@angular/core';
 import { IngredientsComponent } from '../ingredients/ingredients.component';
 import { RecipeService } from '../recipe.service';
+import { IRecipe } from '../model/i-recipe';
 
 @Component({
   selector: 'app-recipe',

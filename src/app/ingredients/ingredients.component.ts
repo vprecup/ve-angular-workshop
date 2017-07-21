@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { IRecipeIngredient } from '../model/i-recipe';
 
 @Component({
   selector: 'app-ingredients',

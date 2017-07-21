@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { RecipeService } from '../recipe.service';
 import { Observable } from 'rxjs/Observable';
+import { IRecipe } from '../model/i-recipe';
 
 @Component({
   selector: 'app-weekly-menu',
